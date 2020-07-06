@@ -12,7 +12,7 @@ app.use(express.json({limit:'1mb'}));
 var myProxyList = require('./useragentlist');
 var All_Info,some1;
 
-some1 = new Object();
+
 
  myUserAgents =  myProxyList.myUserAgents;
 
