@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: rgb(100, 95, 95);
+    font-size: 50px;
+    animation: h1ani 2s infinite ;
+    animation-timing-function: linear;
+}
+
+@keyframes h1ani{
+    from{
+        color: #1abc9c;
+    }
+    to{
+        color: #8e44ad;
+    }
+}
