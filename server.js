@@ -4,10 +4,12 @@ const app = express();
 const request = require('request');
 const cherio = require('cheerio');
 const querystring = require('querystring');
+const cors = require('cors');
 const port = process.env.PORT || 3000;
 var data2,video_id;
 app.listen(port);
 app.use(express.static('Website'));
+app.use(cors());
 app.use(express.json({limit:'1mb'}));
 var myProxyList = require('./useragentlist');
 var All_Info,some1;
@@ -46,18 +48,18 @@ var All_Info,some1;
         else{
 
         const user_name = $('.name').text().trim();
-        const user_level = $('.detail div').first().text().replace(/\s\s+/g,'');
-        const user_tottal_xp = $('.detail div').last().text().trim();
+        const user_level = parseInt($('.detail div').first().text().replace(/\n/g, '').slice(5));
+        const user_tottal_xp = parseInt($('.detail div').last().text().trim().slice(0, -3));
         const user_profile_pic_url = 'https://api.sololearn.com/Uploads/Avatars/'+sololearn_id+'.jpg';
         const user_cources_list = {};
         const user_codes_list = {};
-        const user_certificates_list = {};
+        const user_certificates_list = [];
 
 
         $('.courseWrapper').each((index,ele)=>{
 
             const cource_name = $(ele).find('a').attr('title');
-            const cource_xp = $(ele).find('.courseXp').text();
+            const cource_xp = parseInt($(ele).find('.courseXp').text().slice(0, -3));
             
             user_cources_list[cource_name]=cource_xp;
            
@@ -68,7 +70,7 @@ var All_Info,some1;
 
             
             const code_text = $(el).find('.codeDetails a').text();
-            var code_upvotes = $(el).find('.positive').html();
+            var code_upvotes = parseInt($(el).find('.positive').html());
             if(code_upvotes==null){
                 code_upvotes=0;
             }
@@ -83,7 +85,7 @@ var All_Info,some1;
         $('.certificate').each((index3,e)=>{
             const cert_name = $(e).find('.details').find('.title').text().trim();
 
-            user_certificates_list[index3]=cert_name;
+            user_certificates_list.push(cert_name);
             
         })
         
