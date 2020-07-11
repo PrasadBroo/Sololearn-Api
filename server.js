@@ -3,16 +3,14 @@ const express = require('express');
 const app = express();
 const request = require('request');
 const cherio = require('cheerio');
-const querystring = require('querystring');
 const cors = require('cors');
 const port = process.env.PORT || 3000;
-var data2,video_id;
 app.listen(port);
 app.use(express.static('Website'));
 app.use(cors());
 app.use(express.json({limit:'1mb'}));
 var myProxyList = require('./useragentlist');
-var All_Info,some1;
+var All_Info;
 
 
 
@@ -22,7 +20,7 @@ var All_Info,some1;
  app.get('/sololearn',(req,mainres)=>{
 
     var sololearn_id = req.query.sololearn_id;
-    if(sololearn_id == null || sololearn_id == ''){
+    if(sololearn_id == null || sololearn_id == '' || sololearn_id.trim()==null || sololearn_id.trim()==''){
             mainres.json({Error:"sololearn_id must be passed in using query strings"});
             return;
       }
