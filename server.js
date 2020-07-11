@@ -13,7 +13,6 @@ var myProxyList = require('./useragentlist');
 var All_Info;
 
 
-
  myUserAgents =  myProxyList.myUserAgents;
 
 
