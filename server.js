@@ -18,7 +18,7 @@ var All_Info;
 
  app.get('/sololearn',(req,mainres)=>{
 
-    var sololearn_id = req.query.sololearn_id;
+    var sololearn_id = req.query.sololearn_id.trim();
     if(sololearn_id == null || sololearn_id == '' || sololearn_id.trim()==null || sololearn_id.trim()==''){
             mainres.json({Error:"sololearn_id must be passed in using query strings"});
             return;
