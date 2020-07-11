@@ -21,7 +21,10 @@ var All_Info,some1;
 
  app.get('/sololearn',(req,mainres)=>{
 
-    var sololearn_id = req.query.sololearn_id
+    var sololearn_id = req.query.sololearn_id;
+    if(sololearn_id == null || sololearn_id == ''){
+            mainres.json({Error:"sololearn_id must be passed in using query strings"});
+      }
 
     let random = Math.floor(Math.random()*myUserAgents.length);
             var customHeaderRequest = request.defaults({
@@ -44,9 +47,6 @@ var All_Info,some1;
         if(check=='Page Not Found' || check=='Error.'){
             mainres.json({Error:"Maybe Provided Id Is Incorrect..:("});
             console.log('yuppp')
-        }
-        else if(sololearn_id == null){
-            mainres.json({Error:"sololearn_id must be passed in using query strings"});
         }
         else{
 
