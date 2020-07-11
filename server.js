@@ -41,9 +41,12 @@ var All_Info,some1;
 
         const check = $('.content h1').text()
     
-        if(check=='Page Not Found'){
+        if(check=='Page Not Found' || check=='Error.'){
             mainres.json({Error:"Maybe Provided Id Is Incorrect..:("});
             console.log('yuppp')
+        }
+        else if(sololearn_id == null){
+            mainres.json({Error:"sololearn_id must be passed in using query strings"});
         }
         else{
 
@@ -71,7 +74,7 @@ var All_Info,some1;
             
             const code_text = $(el).find('.codeDetails a').text();
             var code_upvotes = parseInt($(el).find('.positive').html());
-            if(code_upvotes==null){
+            if(Number.isNaN(code_upvotes)){
                 code_upvotes=0;
             }
             
