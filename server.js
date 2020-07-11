@@ -24,6 +24,7 @@ var All_Info,some1;
     var sololearn_id = req.query.sololearn_id;
     if(sololearn_id == null || sololearn_id == ''){
             mainres.json({Error:"sololearn_id must be passed in using query strings"});
+            return;
       }
 
     let random = Math.floor(Math.random()*myUserAgents.length);
