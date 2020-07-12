@@ -37,7 +37,7 @@ Bedrock Coder – [Bedrock Coder](https://www.sololearn.com/Profile/16739592/)
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/PrasadBroo/Sololearn-Api/](https://github.com/PrasadBroo/)
 
 ## Contributing
 
@@ -49,5 +49,5 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 <!-- Markdown link & img dfn's -->
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+[wiki]: https://github.com/PrasadBroo/Sololearn-Api/
 
