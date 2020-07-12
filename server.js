@@ -92,6 +92,11 @@ var All_Info;
         
 
         All_Info = {
+            Contributors: {
+                'Prasad Shinde': 'https://www.sololearn.com/Profile/13710268',
+                'Bedrock Coder': 'https://www.sololearn.com/Profile/16739592/'
+            },
+            Github_Repository_Link: 'https://github.com/PrasadBroo/Sololearn-Api',
             User_Basic_Info: {
                 User_Name: user_name,
                 User_Current_Level: user_level,
