@@ -2,9 +2,6 @@
 > Get Any User Information.
 
 
-
-![](header.png)
-
 ## Usage
 
 Endpoints:
