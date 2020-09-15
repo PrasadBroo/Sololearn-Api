@@ -10,19 +10,33 @@
 Endpoints:
 
 ```sh
-https://soloapi.herokuapp.com/sololearn
+https://soloapi.herokuapp.com/sololearn  
+```
+```sh
+https://soloapi.herokuapp.com/playground/:section/:language  
 ```
 
 Query:
 
 ```sh
-https://soloapi.herokuapp.com/sololearn?sololearn_id=16739592  change id to yours.
+https://soloapi.herokuapp.com/sololearn?sololearn_id= your_sololean_id
 ```
 
-## Usage example
+# Usage example
 
-Make request to endpoint with sololearn_id (query) and get details of that user as showed in screenshot
-
+  ## For User Basic Info.
+  ```sh
+  GET https://soloapi.herokuapp.com/sololearn?sololearn_id=13710268
+  ```
+  You Will Get Responce As Shown In Screenshot.
+  
+  ## For Coding Playground Info.
+  ```sh
+  GET https://soloapi.herokuapp.com/playground/trending/all
+  ```
+  In This Example You Need To Pass Two Params First :section eg.Trending,MostRecent,MostPopular etc
+  And Second Parameter is :language to get specific language list of objects eg.web,py,java,c etc.
+  
 
 ## Release History
 
