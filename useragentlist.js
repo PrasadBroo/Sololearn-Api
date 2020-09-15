@@ -848,4 +848,4 @@ var myUserAgents = [
   "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-US) AppleWebKit/530.5 (KHTML, like Gecko) Chrome/ Safari/530.5",
 ];
 
-module.exports = { myUserAgents };
+module.exports = myUserAgents;
