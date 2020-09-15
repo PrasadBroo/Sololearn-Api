@@ -10,13 +10,13 @@
 Endpoints:
 
 ```sh
-https://sololearn-api-by-prasad.herokuapp.com/sololearn
+https://soloapi.herokuapp.com/sololearn
 ```
 
 Query:
 
 ```sh
-https://sololearn-api-by-prasad.herokuapp.com/sololearn?sololearn_id=16739592  change id to yours.
+https://soloapi.herokuapp.com/sololearn?sololearn_id=16739592  change id to yours.
 ```
 
 ## Usage example
