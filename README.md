@@ -33,6 +33,23 @@ https://soloapi.herokuapp.com/sololearn?sololearn_id= your_sololean_id
   ```
   > In This Example You Need To Pass Two Params First :section eg.Trending,MostRecent,MostPopular etc
   And Second Parameter is :language to get specific language list of objects eg.web,py,java,c etc.
+ 
+  * section parameters
+    * Trending
+    * MostRecent
+    * MostPopular
+    
+  * language parameters
+    * web
+    * c
+    * cs
+    * cpp
+    * java
+    * kt
+    * py
+    * php
+    * swift
+    * all
   
 
 ## Release History
