@@ -1,6 +1,14 @@
 # Sololearn Api
-> Things Made Simple
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
+
+
+<img src="sololearn.png" alt="Banner" width="100%" height="300">
 
 ## Usage
 
@@ -78,4 +86,14 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [wiki]: https://github.com/PrasadBroo/Sololearn-Api/
+[contributors-shield]: https://img.shields.io/github/contributors/PrasadBroo/Sololearn-Api.svg?style=flat-square
+[contributors-url]: https://github.com/PrasadBroo/Sololearn-Api/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/PrasadBroo/Sololearn-Api.svg?style=flat-square
+[forks-url]: https://github.com/PrasadBroo/Sololearn-Api/network/members
+[stars-shield]: https://img.shields.io/github/stars/PrasadBroo/Sololearn-Api.svg?style=flat-square
+[stars-url]: https://github.com/PrasadBroo/Sololearn-Api/stargazers
+[issues-shield]: https://img.shields.io/github/issues/PrasadBroo/Sololearn-Api.svg?style=flat-square
+[issues-url]: https://github.com/PrasadBroo/Sololearn-Api/issues
+[license-shield]: https://img.shields.io/github/license/PrasadBroo/Sololearn-Api.svg?style=flat-square
+[license-url]: https://github.com/PrasadBroo/Sololearn-Api/blob/master/LICENSE.txt
 
