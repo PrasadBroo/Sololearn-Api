@@ -1,4 +1,8 @@
-# Sololearn Api
+<h1 align="center">Sololearn Api</h1>
+<p align="center">
+            Learn Playing Play Learning 
+</p>
+
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
