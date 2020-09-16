@@ -67,13 +67,8 @@ https://soloapi.herokuapp.com/sololearn?sololearn_id= your_sololean_id
 ## Release History
 
 * v1
-    * CHANGE: Added Contributors.
+    * CHANGE: Formatted Code.
 
-
-## Follow Us On Sololearn (Contributors)
-
-Prasad Shinde – [Prasad Shinde](https://www.sololearn.com/Profile/13710268) 
-Bedrock Coder – [Bedrock Coder](https://www.sololearn.com/Profile/16739592/) 
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
