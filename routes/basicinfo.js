@@ -83,10 +83,6 @@ router.get("/sololearn", (req, mainres) => {
 
 
           let All_Info = {
-            Contributors: {
-              "Prasad Shinde": "https://www.sololearn.com/Profile/13710268",
-              "Bedrock Coder": "https://www.sololearn.com/Profile/16739592/",
-            },
             User_Basic_Info: {
               User_Name: user_name,
               User_Current_Level: user_level,
